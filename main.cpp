@@ -17,6 +17,9 @@ int main() {
     int n, m, d, delay;
     std::cin >> n >> m >> d >> delay;
 
+    std::string exe = "\x1b[H";
+    if (n < 1 || m < 1 || d < 0 || delay < 0) exe = '\x07' + exe;
+
     n = abs(n);
     m = abs(m);
     d = abs(d);
@@ -42,7 +45,7 @@ int main() {
                 mat[i][j] %= 10;
             }
 
-        std::cout << "\x1b[H";
+        std::cout << exe;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (mat[i][j] == 0) {
