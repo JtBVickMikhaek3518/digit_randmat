@@ -5,8 +5,7 @@ Simple instructions:
 - To run the simple: `make watch`
 - To run release: `make run`
 
-Parameters: `rows columns start_value delay_millisecs bell?`\
-About bell: Plays `\x07`
+Parameters: `rows columns start_value delay_millisecs`
 
 Bye, have a great time!
 
