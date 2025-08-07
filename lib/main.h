@@ -2,6 +2,7 @@
 #include <windows.h>
 
 bool is_legacy() {
+
     HANDLE hStdout = GetStdHandle(STD_OUTPUT_HANDLE);
     DWORD mode = 0;
 
