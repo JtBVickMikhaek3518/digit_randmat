@@ -63,6 +63,7 @@ int main() {
         std::this_thread::sleep_for(std::chrono::milliseconds(delay));
     }
 
+    std::cout << "Done!";
     getch();
 
     return 0;
